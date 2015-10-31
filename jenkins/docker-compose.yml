@@ -1,0 +1,10 @@
+jenkins:
+  container_name: jenkins
+  image: jenkins
+  user: root
+  ports:
+      - "8080:8080"
+  volumes:
+    - ~/jenkins/:/var/jenkins_home
+
+  restart: always
