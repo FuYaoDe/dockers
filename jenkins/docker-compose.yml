@@ -6,5 +6,12 @@ jenkins:
       - "8080:8080"
   volumes:
     - ~/jenkins/:/var/jenkins_home
-
   restart: always
+
+
+docker:
+  container_name: jenkins_docker
+  image: docker:1.8-dind
+  privileged: true
+  links:
+    - jenkins
