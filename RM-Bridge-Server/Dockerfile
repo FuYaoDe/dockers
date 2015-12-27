@@ -1,4 +1,4 @@
-FROM fuyaode/android19-vnc
+FROM softsam/android-19
 
 MAINTAINER fuyaode
 
